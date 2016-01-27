@@ -1,5 +1,5 @@
 # TaeKimJapansesVocabExtractor
-A couple tools I wrote (in Python, with the re, requests, and BeautifulSoup) to help gather all vocab words in Tae Kim's "Complete Guide to Japanese", and save them as a text file in the current directory.
+A couple tools I wrote (in Python 3, with the re, requests, and BeautifulSoup) to help gather all vocab words in Tae Kim's "Complete Guide to Japanese", and save them as a text file in the current directory.
 
 The first (taeKimVocab.py) is a script that goes through a page in Tae Kim's "Complete Guide to Japanese",
 and grabs (using regular expressions and BeautifulSoup) all the vocab in that page.
