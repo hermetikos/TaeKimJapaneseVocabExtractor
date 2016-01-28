@@ -29,7 +29,6 @@ outline of process:
     you may wanna take the radicals from kanji damage
 """
 
-
 #all pages somehow branch off this one
 home = "http://www.guidetojapanese.org"
 #start at this web page
