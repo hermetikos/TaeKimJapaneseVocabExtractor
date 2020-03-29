@@ -32,7 +32,7 @@ outline of process:
 #all pages somehow branch off this one
 home = "http://www.guidetojapanese.org"
 #start at this web page
-url = requests.get(home + "/learn/complete/writing")
+url = requests.get(home + "/learn/grammar/writing")
 
 #open files to store data in
 vocabFile = open("taeKimVocab.txt", "w", encoding="utf-8")
