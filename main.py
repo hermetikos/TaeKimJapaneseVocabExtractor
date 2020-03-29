@@ -8,7 +8,7 @@ def getSection(html):
     #given a web soup, find the "up" link, which is the current segment
     link = html.find_all("link", rel="up")
     #isolate the section title from the link
-    chapter = re.search('<link href="/learn/complete/(?P<chapter>.*?)" rel="up"/>', str(link))
+    chapter = re.search('<link href="http://www.guidetojapanese.org/learn/grammar/(?P<chapter>.*?)" rel="up"/>', str(link))
     if chapter:
         return str(chapter.group("chapter"))
     else:
@@ -71,10 +71,9 @@ while count==count:
                 #               + '*' + data.group('translation') + '*' + section + ' tae_kim\n')
                 vocabFormat = (data.group("vocab") + '*' + data.group("reading")
                                + '*' + data.group('translation'))
+
                 #write the vocab in the vocab file
-                #vocabFile.write(vocabFormat)
                 #store all vocab in a set
-                #vocabSet.add(vocabFormat)
                 if vocabFormat in vocabDict:
                     vocabDict[vocabFormat] = vocabDict[vocabFormat] + " " + section
                 else:
@@ -117,4 +116,3 @@ vocabFile.close()
 kanjiFile.close()
 
 print("FINISHED")
-winsound.Beep(440, 1000)
