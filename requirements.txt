@@ -27,7 +27,7 @@ scrapy-redis==0.6.8
 service-identity==18.1.0
 six==1.14.0
 soupsieve==2.0
-Twisted==20.3.0
+Twisted==22.4.0
 urllib3==1.25.8
 w3lib==1.21.0
 zope.interface==5.1.0
